@@ -34,7 +34,7 @@ router.get("/", async ctx => {
         `https://itunes.apple.com/${ctx.query.language}/rss/customerreviews/id=${ctx.query.ID}/sortBy=mostRecent/json`
     );
 
-    const rawReviews = response.data.feed.entry;
+    const rawReviews = response.data["feed"]["entry"];
 
     const processedReviews = rawReviews
         .map(
