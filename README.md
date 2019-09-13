@@ -7,7 +7,7 @@ ID       | int    | Yes
 language | string | Yes
     
 ## Example Request
-https://reviews.channy.io/?ID=368677368&language=us
+http://localhost/?ID=368677368&language=us
 
 ## Example Response
 ```json
